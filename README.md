@@ -1,6 +1,6 @@
 # ArtiShop
 
-Boutique en ligne de produits artisanaux marocains. Projet fil rouge du cours DevOps.
+Boutique en ligne de produits artisanaux marocains. Projet fil rouge du cours DevOps IGOV M2.
 
 ## Fonctionnalités
 
@@ -62,3 +62,4 @@ artishop/
 
 Le panier est gardé en mémoire : il est vidé à chaque redémarrage du serveur.
 # Recette QA
+
