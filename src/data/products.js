@@ -49,6 +49,7 @@ const products = [
     stock: 50,
     description: "Savon noir traditionnel à l'huile d'olive et à l'eucalyptus."
   }
+ 
 
 ];
 
