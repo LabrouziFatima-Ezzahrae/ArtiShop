@@ -49,12 +49,22 @@ const products = [
     stock: 50,
     description: "Savon noir traditionnel à l'huile d'olive et à l'eucalyptus."
   },
+<<<<<<< HEAD
  {   id: 7,
     name: "Babouches brodées de Fès",
     category: "Maroquinerie",
     price: 220,
     stock: 12,
     description: "Babouches brodées de Fès."
+=======
+  {
+    id: 8,
+    name: "Pouf en cuire de Marrakech",
+    category: "Maroquinerie",
+    price: 350,
+    stock: 6,
+    description: "Pouf round en cuir brode a la main, livre non rembourre."
+>>>>>>> b6c7d41 (Ajouter le produit Pouf en cuire dand produit.js)
   }
 
 ];
