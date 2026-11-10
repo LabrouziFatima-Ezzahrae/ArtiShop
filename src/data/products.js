@@ -56,6 +56,6 @@ const products = [
     price: 220,
     stock: 12,
     description: "Babouches brodées de Fès WOW !!!!"
-  };
+  }
   ];
 module.exports = products;
