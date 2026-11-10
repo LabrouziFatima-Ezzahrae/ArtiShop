@@ -49,6 +49,7 @@ const products = [
     stock: 50,
     description: "Savon noir traditionnel à l'huile d'olive et à l'eucalyptus."
   },
+<<<<<<< HEAD
    {
     id: 7,
     name: "Tajine décoré de Safi",
@@ -58,4 +59,14 @@ const products = [
     description: "Tajine décoré de Safi."
   }
 ];
+=======
+  {
+    id: 8,
+    name: "Babouches brodées de Fès",
+    category: "Maroquinerie",
+    price: 220,
+    stock: 12,
+    description: "Babouches brodées de Fès WOW !!!!"
+  };
+>>>>>>> 26a7997 (ajouter Babouches brodées de Fès)
 module.exports = products;
