@@ -48,9 +48,15 @@ const products = [
     price: 45,
     stock: 50,
     description: "Savon noir traditionnel à l'huile d'olive et à l'eucalyptus."
-  }
- 
-
+  },
+   {
+     id: 7,
+     name: "Pouf en cuir de Marrakech",
+     category: "Maroquinerie",
+     price: 350,
+     stock: 6,
+     description: "Pouf rond en cuir brodé à la main, livré non rembourré."
+   }
 ];
 
 module.exports = products;
