@@ -5,6 +5,12 @@ NPM := npm
 NODE := node
 URL := http://localhost:$(PORT)
 
+ifeq ($(CI), true)
+  INSTALL_CMD := $(NPM) ci
+else
+  INSTALL_CMD := $(NPM) install
+endif
+
 install: node_modules
 
 start: node_modules
@@ -23,7 +29,7 @@ health:
 	@curl -fsS $(URL)/health || (echo "ArtiShop ne répond pas sur $(URL)" && exit 1)
 
 node_modules: package.json package-lock.json
-	$(NPM) install
+	$(INSTALL_CMD)
 	@touch $@
 
 APP     := artishop
