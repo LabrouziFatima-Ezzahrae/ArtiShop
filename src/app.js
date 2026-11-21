@@ -45,7 +45,11 @@ appliedCodes = []; // codes promo appliqués
     }
     res.json(product);
   });
-
+   // Recherche : /api/products/search?q=tapis
+   app.get("/api/products/search", (req, res) => {
+    const q = (req.query.q || "").toLowerCase();
+    res.json(products.filter((p) => p.name.toLowerCase().includes(q)));
+    });
   // Contenu du panier avec le total
   function cartSummary() {
     const items = [...cart.entries()].map(([productId, quantity]) => {
