@@ -1,4 +1,4 @@
-.PHONY: install start dev test clean health
+.PHONY: install start dev test clean health package
 
 PORT ?= 3000
 NPM := npm
@@ -25,3 +25,17 @@ health:
 node_modules: package.json package-lock.json
 	$(NPM) install
 	@touch $@
+
+APP     := artishop
+VERSION := $(shell $(NODE) -p "require('./package.json').version")
+DIST    := dist
+ARCHIVE := $(DIST)/$(APP)-$(VERSION).tar.gz
+SRC := $(wildcard src/*.js src/data/*.js public/*)
+
+$(ARCHIVE): $(SRC) package.json package-lock.json README.md | $(DIST)
+	tar -czf $@ src public package.json package-lock.json README.md
+
+$(DIST):
+	mkdir -p $@
+
+package: $(ARCHIVE)
