@@ -79,7 +79,7 @@ const products = [
       id: 10,
       name: "Tajine décoré de Safi",
       category: "Poterie",
-      price: 190 MAD,
+      price: 190,
       stock: 10,
       description: "Tajine décoré de Safi."
     }
