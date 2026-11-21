@@ -49,15 +49,24 @@ const products = [
     stock: 50,
     description: "Savon noir traditionnel à l'huile d'olive et à l'eucalyptus."
   },
-  {
-      id: 7,
+  {  id: 7,
       name: "Pouf en cuir de Marrakech",
       category: "Maroquinerie",
       price: 350,
       stock: 6,
       description: "Pouf rond en cuir brodé à la main, livré non rembourré."
     },
-  {
+
+  
+{
+    id: 8,
+    name: "Plateau en zellige de Fès",
+    category: "Poterie",
+    price: 280,
+    stock: 4,
+    description: "Plateau en zellige de Fès."
+  }
+  ,{
       id: 9,
       name: "Babouches brodées de Fès",
       category: "Maroquinerie",
@@ -65,5 +74,6 @@ const products = [
       stock: 12,
       description: "Babouches brodées de Fès"
     }
+  
   ];
 module.exports = products;
