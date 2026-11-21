@@ -56,7 +56,6 @@ const products = [
       stock: 6,
       description: "Pouf rond en cuir brodé à la main, livré non rembourré."
     },
-
   
 {
     id: 8,
@@ -66,6 +65,7 @@ const products = [
     stock: 4,
     description: "Plateau en zellige de Fès."
   }
+
   ,{
       id: 9,
       name: "Babouches brodées de Fès",
@@ -75,5 +75,6 @@ const products = [
       description: "Babouches brodées de Fès"
     }
   
+
   ];
 module.exports = products;
