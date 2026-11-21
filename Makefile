@@ -1,16 +1,24 @@
-.PHONY: install start dev test clean
+.PHONY: install start dev test clean health
+
+PORT ?= 3000
+NPM := npm
+NODE := node
+URL := http://localhost:$(PORT)
 
 install:
-	npm install
+	$(NPM) install
 
 start:
-	npm start
+	PORT=$(PORT) $(NPM) start
 
 dev:
-	npm run dev
+	PORT=$(PORT) $(NPM) run dev
 
 test:
-	npm test
+	$(NPM) test
 
 clean:
 	rm -rf dist *.log
+
+health:
+	@curl -fsS $(URL)/health || { echo "ArtiShop ne répond pas sur $(URL)"; exit 1; }
