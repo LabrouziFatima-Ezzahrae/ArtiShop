@@ -57,5 +57,14 @@ const products = [
       stock: 6,
       description: "Pouf rond en cuir brodé à la main, livré non rembourré."
     }
+  },
+  {
+      id: 9,
+      name: "Babouches brodées de Fès",
+      category: "Maroquinerie",
+      price: 220,
+      stock: 12,
+      description: "Babouches brodées de Fès"
+    }
   ];
 module.exports = products;
