@@ -17,3 +17,5 @@ Thumbs.db
 .idea/
 # Build et livrables Make
 dist/
+.artishop.pid
+artishop.log
