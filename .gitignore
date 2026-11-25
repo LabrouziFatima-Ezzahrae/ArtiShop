@@ -15,3 +15,7 @@ Thumbs.db
 # Éditeurs
 .vscode/
 .idea/
+# Build et livrables Make
+dist/
+.artishop.pid
+artishop.log
